@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back to Black | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <p><a href="index.html">STUDIO 97</a></p>
+      <div class="nav-menu">
+          <button class = "btn" onclick="setDarkMode()" id = "btn">Toggle dark mode</button>
+      </div> 
+    </header>
+    <div class="contact-item-one">
+        <div class="contact-item-one-text"><h3>OUR OFFICE BUILDING: <br><br>Find us at Svegågen 23 in Stockholm</h3></div>
+        <img src="https://www.berlin.de/binaries/asset/image_assets/3137046/source/1650965611/624x468/" alt="modern office building in downtown"width="300px">
+        <img src="https://maps.locationiq.com/v2/staticmap?key=pk.166833140682d65ecdb5ec25f11c40d9&center=59.335201,18.064301&zoom=16&markers=59.335201,18.064301&size=400x400@2x" alt="" width="400px">
+        <img src="http://cdn.home-designing.com/wp-content/uploads/2015/03/private-art-gallery.jpg" alt="" width="267px">
+      </div>
+        <div class="contact-item-two" id="container">
+            <h4>&bull; Keep in Touch &bull;</h4>
+            <form action="#" method="post" id="contact_form">
+              <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+              </div>
+              
+              <div class="subject">
+                <label for="subject"></label>
+                <select placeholder="Subject line" name="subject" id="subject_input" required>
+                  <option disabled hidden selected>Subject line</option>
+                  <option>Purchase related</option>
+                  <option>Website related</option>
+                  <option>Company related</option>
+                </select>
+              </div>
+              <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Send Message" id="form_button" />
+              </div>
+            </form><!-- // End form -->
+          </div><!-- // End #container -->
+   
+
+    <footer>Copyright © 2022 Back to Black. All rights reserved.
+
+    </footer>
+
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,387 @@
+ /* * {
+    outline: 1px solid red;
+  }         */
+header {
+  height: 60px;
+  top: 0;
+  text-decoration: none;  
+  position: fixed; 
+  z-index: 1;
+  top: 0; 
+  width: 100%; 
+}
+header p {
+  font-size: 25px;
+  position: relative;
+  left: 20px;
+}
+header a {
+  text-decoration: none;  
+}
+.btn {
+  width: 120px;
+  font-size: 13px;
+  position: relative;
+  left: 20px;
+}
+.nav-menu a {
+  position: relative;
+  float: right;
+  color: darkgray;
+  text-decoration: none;
+  bottom: 40px;
+  right: 50px;
+}
+.nav-menu a:hover {
+  background-color: orange;
+  color: black;
+}
+body {
+  /* background-color: white; */
+  color: black;
+  font-size: 15px;
+  display: block;
+  font-family: 'Poiret One', cursive; 
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.first-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center; 
+  position: relative;
+  top: 100px;
+  padding-top: 50px;
+}
+h1 {
+  position: absolute;
+  top: 150px;
+  letter-spacing: 6px;
+  
+}
+.darkToggle {
+  background-color: black;
+  color: white;
+}
+
+.second-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  text-align: center;
+  
+}
+.second-content-text {
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  top: 160px;
+  text-align: center;
+}
+main {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+}
+#wrapper {
+  width: 100%;
+  max-width: 964px;
+  position: absolute;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+  bottom: 200px;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+  
+  
+}
+.item {
+  width: 180px;
+  height: 180px;
+}
+.contact-item-one {
+  font-family: 'Poiret One', cursive;
+  position: relative;
+  top: 140px;
+  padding-left: 150px;
+  justify-content: center;
+
+ }
+ .contact-item-two {
+  font-family: 'Poiret One', cursive;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+
+ }
+
+.query-selection { 
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+} 
+.contact {
+  height: 700px;;
+}
+
+.contact-header a {
+text-decoration: none;
+position: absolute;
+left: 150px;
+bottom: 5px;
+font-family: 'Poiret One', cursive;
+font-size: 25px;
+}
+.contact-header .btn {
+  position: relative;
+  left: 20px;
+}
+
+.contact-header a:hover {
+  background-color: orange;
+  color: black;
+
+}
+footer {
+  position: fixed;
+  height: 50;
+  width: 100%;
+  text-align: right;
+  font-size: 0.8em;
+  bottom: 0;
+}
+ 
+html {
+  font-family: 'Poiret One', cursive;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+} 
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  max-width: 800px;
+  margin: 40px auto;
+  position: relative;
+  top:170px;
+}
+
+form {
+  padding: 37.5px;
+  margin: 40px 0;
+}
+
+h1 {
+  color: #474544;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.email {
+	float: right;
+	width: 100%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+.message {
+	float: none;
+}
+select::-ms-expand {
+  display: none;
+}
+.subject {
+  width: 100%;
+}
+textarea {
+	line-height: 150%;
+	height: 100px;
+	resize: none;
+  width: 100%;
+}
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: wheat;
+  color: black;
+}
+.dark-mpde {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+.hp-main-image{
+    width: 600px;
+
+  } 
+  header {
+    display:fixed
+  }
+  .first-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center; 
+    position: relative;
+    top: 70px;
+    padding-top: 50px;
+  }
+  h1 {
+    position: absolute;
+    top: 80px;
+  }
+  .second-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center; 
+    position: relative;
+  }
+
+  .darkMode {
+    font-size: 10px;
+    display: none;
+    text-align: center;
+  }
+
+  footer {
+    position: fixed;
+    height: 50;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8em;
+    bottom: 0;
+  }
+        
+}
