@@ -4,7 +4,7 @@ let isDarkMode = false;
 function setDarkMode() {
     let element = document.body;
     element.classList.toggle("dark-mode");
-    let text = document.querySelector("h3, a");
+    let text = document.querySelector("h3", "a");
  
     
 if (isDarkMode === false) {
