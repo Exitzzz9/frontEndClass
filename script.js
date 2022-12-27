@@ -4,16 +4,17 @@ let isDarkMode = false;
 function setDarkMode() {
     let element = document.body;
     element.classList.toggle("dark-mode");
-    let myH3 = document.querySelector("h3")
+    let text = document.querySelector("h3, a");
+ 
     
 if (isDarkMode === false) {
     isDarkMode = true; 
     btn.innerText = "Toggle light mode"
-    myH3.style.color = "white";
+    text.style.color = "white";
 } else {
       isDarkMode = false; 
         btn.innerText = "Toggle dark mode"
-        myH3.style.color = "black";
+        text.style.color = "black";
         
 
 }

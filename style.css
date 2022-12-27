@@ -18,6 +18,10 @@ header p {
 header a {
   text-decoration: none;  
 }
+header a:hover {
+  background-color: orange;
+  color: black;
+}
 .btn {
   width: 120px;
   font-size: 13px;
@@ -176,6 +180,9 @@ main {
   height: 700px;;
 }
 
+h4 {
+  text-align: center;
+}
 .contact-header a {
 text-decoration: none;
 position: absolute;
