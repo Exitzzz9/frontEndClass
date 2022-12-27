@@ -148,25 +148,26 @@ main {
   margin: auto;
   box-sizing: border-box;
   
-  
 }
 .item {
   width: 180px;
   height: 180px;
 }
-.contact-item-one {
+ .contact-item-one {
   font-family: 'Poiret One', cursive;
   position: relative;
   top: 140px;
   padding-left: 150px;
   justify-content: center;
-
+  min-height: 400px;
  }
  .contact-item-two {
-  font-family: 'Poiret One', cursive;
-  position: absolute;
-  top: 200px;
-  left: 20px;
+   position: relative;
+   top: 200px;
+ }
+ .contact.item-two-small {
+   position: absolute;
+
 
  }
 
@@ -182,6 +183,18 @@ main {
 
 h4 {
   text-align: center;
+  position: relative;
+  top: 40px;
+}
+.contact-item-text {
+  position: relative;
+  text-align: center;
+}
+
+.contact-images {
+
+  left: 130px;
+  top: 60px;
 }
 .contact-header a {
 text-decoration: none;
@@ -364,10 +377,14 @@ textarea {
     top: 70px;
     padding-top: 50px;
   }
+
+
+  }
   h1 {
     position: absolute;
     top: 80px;
   }
+ 
   .second-content {
     display: flex;
     flex-direction: row;
@@ -390,5 +407,5 @@ textarea {
     font-size: 0.8em;
     bottom: 0;
   }
+
         
-}
